@@ -1,5 +1,4 @@
-import time
-start_time = time.time()
+""" MEGA PRIME """
 def trans(n):
     "hello"
     return n * 2 + 3
@@ -21,8 +20,6 @@ def main(limit):
     else:
         count = 0
         for i in sieve(limit):
-            count += 1
-        print(count)
+            print(i, "is a prime number.")
 
-main(9000000)
-print("--- %s seconds ---" % (time.time() - start_time))
+main(int(input()))
